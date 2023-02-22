@@ -1,3 +1,8 @@
 # Caesar-Shift-Algorithm
 
 I created a function named "caesar_encrypt". Then I created two arrays named "ciphertext_out" and "crypted_text". Later, I created an "alphabet" sequence to examine and shift the letters in my text file. I changed all the letters in my font file to uppercase with the upper() command because my "alphabet" array only includes uppercase letters. My for loop is getting the words from the text file. It converts the words they receive into letters and checks if "alphabet" is in the array. Then I numbered the letters step by step with the index command. Then I used Caesar's Algorithm ((x+n)Mod26). After the process was completed, I added my encrypted message into my crypted_text array that I created at the beginning, and to print it on the screen, I added it to my "ciphertext_out" array and returned the function.
+
+
+# Caesar-Shift-Algorithm Bruteforce
+
+I ran the loop with the command “for key in range(len(alphabet)):” as many letters in the alphabet. I then split my cipher text into letters with a for loop. First, in the if loop, it works if the character is inside the alphabet. Then it equalizes the “num” variable according to where it is in my alphabet list and subtracts it from the key in the first loop. If the “num” variable is less than 0, it adds the number of alphabets and equalizes it with the “num” variable again. If it is not less than 0, it equates alphabet[num] to the variable “bruteforce”. In the elif command, it does the same for the lowercase alphabet index. Finally, in the else part, it equates the “char” variable. It repeats the operations I have done with the print command 25 times and tries to decrypt the Cipher text.
